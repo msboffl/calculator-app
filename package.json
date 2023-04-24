@@ -1,0 +1,23 @@
+{
+  "name": "calculator-app",
+  "version": "1.0.0",
+  "description": "![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently \"nodemon server/server.js\" \"sass --watch client/sass/main.scss client/css/main.css\" "
+  },
+  "author": "Mareedu Saibabu",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "sass": "^1.62.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
